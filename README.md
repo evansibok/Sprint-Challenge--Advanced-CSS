@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+* Ans: Adaptive website uses a mix of fixed layout and fluid layout to adjust websites to different screen sizes while responsive website uses a mix of adaptive + media queries to ensure a website has a fluid design for all screen sizes. 
 
 2. Describe what it means to be mobile first vs desktop first.
+* Ans: Mobile first means building your base styles to support mobile and including subsequent media queries for other screen size while desktop first means building your base css for desktop and including other screen sizes in your media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+* Ans: `font-size: 62.5%` in the html tag enables developers to easily use relative units like `rem`, this makes our work easy because we can scale units in a base 10.
 
 4. How would you describe preprocessing to someone new to CSS?
+* Ans: Preprocessing offers an easier approach to writing css through different processes like tag nesting, variables and others. This makes our code easier to maintain.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+* Ans: My favorite concept is nesting. The concept that has given me the most trouble is parametric mixins but I believe I'm beginning to understand it.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -104,7 +109,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [|] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [|] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 * [|] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 

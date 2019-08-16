@@ -4,15 +4,10 @@
 	background-color: @nav-bg;
 	border: 2px solid @nav-border;
 	padding-top: 1.5em;
-
 	position: fixed;
-	left: 0;
-	right: 0;
+	.nav-positioning();
 
 	@media (@phone) {
-		// position: fixed;
-		// left: 0;
-		// right: 0;
 		background-color: lighten(@nav-bg, 100%);
 	}
 
@@ -23,16 +18,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 		position: relative;
-		left: 0;
-		right: 0;
-
-		// @media (@phone) {
-		// 	position: relative;
-		// 	left: 0;
-		// 	right: 0;
-		// }
+		.nav-positioning();
 
 		h1 {
 			font-size: 3rem;
