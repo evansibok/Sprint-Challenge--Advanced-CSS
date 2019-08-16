@@ -1,14 +1,14 @@
 // Mixins Here
 
-.btn-font-property(@btnColor, @textPosition, @fontS, @fontW) {
-	color: @btnColor;
+.btn-font-property(@textPosition, @fontS, @fontW) {
 	text-align: @textPosition;
 	font-size: @fontS;
 	font-weight: @fontW;
 }
 
-.btn-color-property(@btnWidth, @btnBgColor) {
-	width: @btnWidth;
+.btn-color-property(@btnWidth, @btnColor, @btnBgColor) {
+    width: @btnWidth;
+    color: @btnColor;
 	background-color: @btnBgColor;
 }
 

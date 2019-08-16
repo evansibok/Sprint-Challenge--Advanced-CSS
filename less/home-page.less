@@ -2,6 +2,11 @@
 
 .home {
 	.intro {
+
+		img {
+			.btn-border-radius();
+		}
+
 		h2 {
 			padding: 15px;
 		}
@@ -55,12 +60,16 @@
 			}
 
 			.btn {
-				.btn-font-property(@porcelain, center, 1.5rem, 600);
-				.btn-color-property(30%, @ebony-clay);
-				// width: 30%;
-				// background-color: @ebony-clay;
+				.btn-font-property(center, 1.5rem, 600);
+				.btn-color-property(30%, @porcelain, @ebony-clay);
 				padding: 0.6em 0em;
 				.btn-border-radius();
+
+				&:hover {
+					.btn-color-property(30%, @ebony-clay, transparent);
+					cursor: pointer;
+					border: 1px solid @ebony-clay;
+				}
 			}
 		}
 
