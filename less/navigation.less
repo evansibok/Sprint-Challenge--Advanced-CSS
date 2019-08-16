@@ -1,1 +1,40 @@
 // Navigation code here
+
+.nav-con {
+	background-color: @nav-bg;
+    border: 2px solid @nav-border;
+    padding-top: 1rem;
+
+	.nav-center {
+		margin: 0 auto;
+		max-width: 800px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		nav {
+			ul {
+				display: flex;
+				justify-content: space-evenly;
+				font-size: 1.3rem;
+				
+				li {
+                    padding: 2em;
+                    padding-bottom: 1em;
+					
+					a {
+						text-decoration: none;
+						color: @nav-font;
+                        font-weight: 500;
+                        letter-spacing: 0.1em;
+					}
+				}
+			}
+		}
+	}
+}

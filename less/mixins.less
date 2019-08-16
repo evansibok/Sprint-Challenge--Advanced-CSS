@@ -1,1 +1,20 @@
 // Mixins Here
+
+.btn-font-property(@btnColor, @textPosition, @fontS, @fontW) {
+	color: @btnColor;
+	text-align: @textPosition;
+	font-size: @fontS;
+	font-weight: @fontW;
+}
+
+.btn-color-property(@btnWidth, @btnBgColor) {
+	width: @btnWidth;
+	background-color: @btnBgColor;
+}
+
+.btn-border-radius {
+    border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
