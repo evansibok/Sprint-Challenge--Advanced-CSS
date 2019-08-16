@@ -2,8 +2,8 @@
 
 .nav-con {
 	background-color: @nav-bg;
-    border: 2px solid @nav-border;
-    padding-top: 1rem;
+	border: 2px solid @nav-border;
+	padding-top: 1rem;
 
 	.nav-center {
 		margin: 0 auto;
@@ -12,6 +12,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		// @media (@phone){
+		// 	max-width: 500px;
+		// }
 
 		h1 {
 			font-size: 3rem;
@@ -22,16 +26,24 @@
 				display: flex;
 				justify-content: space-evenly;
 				font-size: 1.3rem;
-				
+
+				@media (@phone) {
+					justify-content: space-around;
+				}
+
 				li {
-                    padding: 2em;
-                    padding-bottom: 1em;
-					
+					padding: 2em;
+					padding-bottom: 1em;
+
+					@media (@phone) {
+						padding: 2em 1em 1em 1em;
+					}
+
 					a {
 						text-decoration: none;
 						color: @nav-font;
-                        font-weight: 500;
-                        letter-spacing: 0.1em;
+						font-weight: 600;
+						letter-spacing: 0.08em;
 					}
 				}
 			}
